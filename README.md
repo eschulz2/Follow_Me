@@ -1,4 +1,4 @@
-Rails Devise
+Rails Follow Me
 ========================
 
 
