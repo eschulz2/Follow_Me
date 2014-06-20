@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def name
-    [first_name, last_name].compact.join(' ')
-  end
+  # def name
+  #   [first_name, last_name].compact.join(' ')
+  # end
 end

@@ -6,18 +6,6 @@
       <h4>Credits Available: <%= @user.credit %></h4>
     </div>
     <div class="form-group">
-      <%= f.label :first_name %>
-      <%= f.text_field :first_name, :autofocus => true, class: 'form-control' %>
-    </div>
-    <div class="form-group">
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name, class: 'form-control' %>
-    </div>
-    <div class="form-group">
-      <%= f.label :shoesize %>
-      <%= f.text_field :shoesize, class: 'form-control' %>
-    </div>
-    <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
