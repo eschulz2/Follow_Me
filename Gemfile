@@ -14,6 +14,7 @@ gem 'activerecord-tableless'
 gem 'devise'
 gem 'foundation-rails'
 gem 'gibbon'
+gem 'high_voltage'
 gem 'simple_form'
 gem 'rails_apps_pages'
 group :development do
