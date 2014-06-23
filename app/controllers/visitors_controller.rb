@@ -14,6 +14,7 @@ class VisitorsController < ApplicationController
       flash[:notice] = "Got it, #{@visitor.email}."
       redirect_to root_path
     else
+      flash[:alert] = "Failure.  Please enter a valid email!"
       render :index
     end
   end
