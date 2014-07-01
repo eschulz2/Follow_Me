@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
   	customer = Stripe::Customer.create(
   		:card => token,
-  		:plan => '100',
+  		:plan => '120',
   		:email => self.email
   		)
   end
