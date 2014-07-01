@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'users', to: 'visitors#new'
   resources :users
   resources :visitors
+  resources :charges
 
   get 'salt', to: 'users#index'
 
