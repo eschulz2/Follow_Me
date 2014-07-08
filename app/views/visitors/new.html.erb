@@ -42,22 +42,22 @@
     </div>
   </div>
 </section>
-<!-- <section>
+<section>
   <hr>
   <div class="column">
     <h2>Stay in touch.</h2>
   </div>
   <div class="column">
     <div class="form-centered">
-      <%=# simple_form_for @visitor do |f| %>
+      <%= simple_form_for @visitor do |f| %>
         <%= f.error_notification %>
-        <%= #f.input :email, label: false, :placeholder => 'Your email address...' %>
+        <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
         <br/>
-        <%= #f.button :submit, "Click Here to Send", :class => "submit" %>
-      <%# end %>
+        <%= f.button :submit, "Click Here to Send", :class => "submit" %>
+      <% end %>
     </div>
   </div>
   <hr>
-</section> -->
+</section>
 
 </body>
