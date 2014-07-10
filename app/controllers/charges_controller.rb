@@ -19,7 +19,7 @@ class ChargesController < ApplicationController
 	  )
 
 	rescue Stripe::CardError => e
-	  flash[:error] = e.message
-	  redirect_to charges_path
+	  # flash[:error] = e.message
+	  redirect_to root_path
 	end	
 end

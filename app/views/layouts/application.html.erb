@@ -11,6 +11,9 @@
     <script src="/js/vendor/jquery.js"></script>
     <script src="/js/vendor/fastclick.js"></script>
     <script src="/js/foundation.min.js"></script>
+    <script src="/js/foundation.alert.js"></script>
+
+    <script src="/js/foundation.tab.js"></script>
 
     <%= javascript_include_tag "https://js.stripe.com/v1/", type: 'text/javascript' %>
     <%= javascript_tag "Stripe.publishableKey = '#{Rails.configuration.stripe[:publishable_key]}';", type: 'text/javascript' %>

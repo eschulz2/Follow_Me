@@ -3,6 +3,9 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    unless current_user.email == 'eschulz2@gmail.com'
+      redirect_to root_path, :alert => "Access denied."
+    end
   end
 
   def show
@@ -11,5 +14,4 @@ class UsersController < ApplicationController
       redirect_to :back, :alert => "Access denied."
     end
   end
-
 end
